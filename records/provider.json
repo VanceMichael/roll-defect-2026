@@ -10,12 +10,25 @@
             "tile": "X1",
             "path": "/scanline/raw?id=X1",
             "box": [
+              10,
+              20,
+              0,
+              8
+            ],
+            "sha256": "21560ac9dd64b18aa8854d17e3089d707537b55898374cb21d76303ba6740622"
+          },
+          {
+            "mother": "Q",
+            "generation": "g1",
+            "tile": "Y1",
+            "path": "/scanline/raw?id=Y1",
+            "box": [
               0,
               8,
-              0,
-              5
+              5,
+              9
             ],
-            "sha256": "10b669f66970ab694dc04fad85072af7ed48b02bce348782488e5862b872b7f4"
+            "sha256": "8cc1d59572096230ad0b2acc2aa8c4c880272d06e4b38605618a966db84454de"
           }
         ]
       },
@@ -31,18 +44,32 @@
         "path": "/loads/labels",
         "body": [
           {
-            "label": "D1",
+            "label": "D3",
             "order": "O1",
-            "slot": "L",
-            "state": "printing"
+            "slot": "X",
+            "state": "departed"
           },
           {
             "label": "D2",
             "order": "O2",
             "slot": "M",
-            "state": "departed"
+            "state": "queued"
+          },
+          {
+            "label": "D1",
+            "order": "O3",
+            "slot": "L",
+            "state": "printing"
           }
         ]
+      },
+      {
+        "path": "/scanline/raw",
+        "body": null,
+        "file": "scan-q.dat",
+        "query": {
+          "id": "Y1"
+        }
       }
     ],
     "rescan": [
@@ -55,12 +82,25 @@
             "tile": "X1",
             "path": "/scanline/raw?id=X1",
             "box": [
+              10,
+              20,
               0,
-              7,
-              0,
-              5
+              8
             ],
-            "sha256": "ad6b6045cd3fd2f40b2a5c7462feeabdc06429ead6cf315570eabb9c5ae78751"
+            "sha256": "84378d1c912edac27be7018f2538b3cc46f31338a12ae6ba7cc59334846e60c8"
+          },
+          {
+            "mother": "Q",
+            "generation": "g1",
+            "tile": "Y1",
+            "path": "/scanline/raw?id=Y1",
+            "box": [
+              0,
+              10,
+              5,
+              9
+            ],
+            "sha256": "8cc1d59572096230ad0b2acc2aa8c4c880272d06e4b38605618a966db84454de"
           }
         ]
       },
@@ -88,18 +128,32 @@
         "path": "/loads/labels",
         "body": [
           {
-            "label": "D1",
+            "label": "D3",
             "order": "O1",
-            "slot": "L",
-            "state": "printing"
+            "slot": "X",
+            "state": "departed"
           },
           {
             "label": "D2",
             "order": "O2",
             "slot": "M",
-            "state": "departed"
+            "state": "queued"
+          },
+          {
+            "label": "D1",
+            "order": "O3",
+            "slot": "L",
+            "state": "printing"
           }
         ]
+      },
+      {
+        "path": "/scanline/raw",
+        "body": null,
+        "file": "scan-q.dat",
+        "query": {
+          "id": "Y1"
+        }
       }
     ],
     "known": [
@@ -115,18 +169,63 @@
         "path": "/loads/labels",
         "body": [
           {
-            "label": "D1",
+            "label": "D3",
             "order": "O1",
-            "slot": "L",
-            "state": "held"
+            "slot": "X",
+            "state": "departed"
           },
           {
             "label": "D2",
             "order": "O2",
             "slot": "M",
-            "state": "departed"
+            "state": "queued"
+          },
+          {
+            "label": "D1",
+            "order": "O3",
+            "slot": "L",
+            "state": "held"
           }
         ]
+      },
+      {
+        "path": "/scanline/index",
+        "body": [
+          {
+            "mother": "P",
+            "generation": "g2",
+            "tile": "X1",
+            "path": "/scanline/raw?id=X1",
+            "box": [
+              10,
+              20,
+              0,
+              8
+            ],
+            "sha256": "84378d1c912edac27be7018f2538b3cc46f31338a12ae6ba7cc59334846e60c8"
+          },
+          {
+            "mother": "Q",
+            "generation": "g1",
+            "tile": "Y1",
+            "path": "/scanline/raw?id=Y1",
+            "box": [
+              0,
+              10,
+              5,
+              9
+            ],
+            "sha256": "8cc1d59572096230ad0b2acc2aa8c4c880272d06e4b38605618a966db84454de"
+          }
+        ]
+      },
+      {
+        "path": "/scanline/raw",
+        "body": null,
+        "file": "scan-q.dat",
+        "query": {
+          "id": "Y1"
+        }
       }
     ]
   },

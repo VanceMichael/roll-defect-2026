@@ -27,5 +27,5 @@ test('重扫沿用块名，车位打印中不会立即接纳隔离', async t => 
   assert.equal((await post(root, '/loads/hold', { label: 'D1', range: [2, 3, 1, 4] })).status, 202)
   await post(root, '/lab?stage=known')
   assert.notDeepEqual(await raw(), first)
-  assert.equal((await (await fetch(root + '/loads/labels')).json())[0].state, 'held')
+  assert.equal((await (await fetch(root + '/loads/labels')).json())[2].state, 'held')
 })
