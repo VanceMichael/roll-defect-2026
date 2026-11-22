@@ -1,0 +1,134 @@
+{
+  "stages": {
+    "scan": [
+      {
+        "path": "/scanline/index",
+        "body": [
+          {
+            "mother": "P",
+            "generation": "g1",
+            "tile": "X1",
+            "path": "/scanline/raw?id=X1",
+            "box": [
+              0,
+              8,
+              0,
+              5
+            ],
+            "sha256": "10b669f66970ab694dc04fad85072af7ed48b02bce348782488e5862b872b7f4"
+          }
+        ]
+      },
+      {
+        "path": "/scanline/raw",
+        "body": null,
+        "file": "scan-p1.dat",
+        "query": {
+          "id": "X1"
+        }
+      },
+      {
+        "path": "/loads/labels",
+        "body": [
+          {
+            "label": "D1",
+            "order": "O1",
+            "slot": "L",
+            "state": "printing"
+          },
+          {
+            "label": "D2",
+            "order": "O2",
+            "slot": "M",
+            "state": "departed"
+          }
+        ]
+      }
+    ],
+    "rescan": [
+      {
+        "path": "/scanline/index",
+        "body": [
+          {
+            "mother": "P",
+            "generation": "g2",
+            "tile": "X1",
+            "path": "/scanline/raw?id=X1",
+            "box": [
+              0,
+              7,
+              0,
+              5
+            ],
+            "sha256": "ad6b6045cd3fd2f40b2a5c7462feeabdc06429ead6cf315570eabb9c5ae78751"
+          }
+        ]
+      },
+      {
+        "path": "/scanline/raw",
+        "body": null,
+        "file": "scan-p1.dat",
+        "query": {
+          "id": "X1"
+        }
+      },
+      {
+        "path": "/loads/hold",
+        "body": {
+          "label": "D1",
+          "state": "received"
+        },
+        "method": "POST",
+        "payload": {
+          "label": "D1"
+        },
+        "status": 202
+      },
+      {
+        "path": "/loads/labels",
+        "body": [
+          {
+            "label": "D1",
+            "order": "O1",
+            "slot": "L",
+            "state": "printing"
+          },
+          {
+            "label": "D2",
+            "order": "O2",
+            "slot": "M",
+            "state": "departed"
+          }
+        ]
+      }
+    ],
+    "known": [
+      {
+        "path": "/scanline/raw",
+        "body": null,
+        "file": "scan-p2.dat",
+        "query": {
+          "id": "X1"
+        }
+      },
+      {
+        "path": "/loads/labels",
+        "body": [
+          {
+            "label": "D1",
+            "order": "O1",
+            "slot": "L",
+            "state": "held"
+          },
+          {
+            "label": "D2",
+            "order": "O2",
+            "slot": "M",
+            "state": "departed"
+          }
+        ]
+      }
+    ]
+  },
+  "common": []
+}
