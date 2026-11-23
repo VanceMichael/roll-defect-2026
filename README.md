@@ -11,3 +11,7 @@ npm run source
 两版业务记录和取件字段见 [资料格式](source/formats.md)。`POST /control?edition=r2` 模拟业务方更换当期资料，切回 `r1` 可重新查看初始来源。
 
 本地演练还提供单独的外部接口。用 `npm run provider` 启动，默认地址为 `http://127.0.0.1:8701`，可用 `PROVIDER_PORT` 调整。来源语义、操作回执和演练档见[外部接口](source/provider.md)。
+
+## 领料核查能力
+
+`capability/` 是接在两边（质检、装车台）领料核查里的 Node.js 能力：从现场扫描凭据一路核到本次真要装车的用幅。`npm run capability` 启动服务（默认 `127.0.0.1:8710`），接口与判定口径见 [capability/README.md](capability/README.md)。
